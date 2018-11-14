@@ -1,4 +1,11 @@
-<div class="scene template i:template">
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript" src="https://detector-v4.dearapi.com/js-include/?site=kbhff-site&dev=0"></script>
+</head>
+
+<body>
+	<div class="scene template i:template">
 
 	<h1>Development template</h1>
 
@@ -424,4 +431,5 @@
 		</form>
 	</div>
 
-</div>
+	</div>
+</body>
