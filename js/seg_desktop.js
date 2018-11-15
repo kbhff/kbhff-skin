@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2018-11-15 12:24:29
+asset-builder @ 2018-11-15 15:50:20
 */
 
 /*seg_desktop_include.js*/
@@ -4632,17 +4632,26 @@ Util.getVar = function(param, url) {
 Util.Objects["page"] = new function() {
 	this.init = function(page) {
 		page.hN = u.qs("#header");
+		page.hN.ul_service = u.qs("ul.servicenavigation", page.hN);
 		page.cN = u.qs("#content", page);
 		page.nN = u.qs("#navigation", page);
-		page.insertBefore(page.nN, page.cN);
+		page.nN = page.insertBefore(page.nN, page.cN);
 		page.fN = u.qs("#footer");
+		page.fN.ul_service = u.qs("ul.servicenavigation", page.fN);
 		page.resized = function() {
 			this.browser_h = u.browserH();
+			this.browser_w = u.browserW();
+			this.available_height = this.browser_h - this.hN.offsetHeight - this.nN.offsetHeight - this.fN.offsetHeight;
+			u.as(this.cN, "min-height", "auto");
+			if(this.available_height >= this.cN.offsetHeight) {
+				u.as(this.cN, "min-height", this.available_height+"px", false);
+			}
 			if(this.cN && this.cN.scene && typeof(this.cN.scene.resized) == "function") {
 				this.cN.scene.resized();
 			}
 		}
 		page.scrolled = function() {
+			page.scrolled_y = u.scrollY();
 			if(this.cN && this.cN.scene && typeof(this.cN.scene.scrolled) == "function") {
 				this.cN.scene.scrolled();
 			}
@@ -4652,45 +4661,24 @@ Util.Objects["page"] = new function() {
 			if(!this.is_ready) {
 				this.is_ready = true;
 				this.cN.scene = u.qs(".scene", this);
-				u.e.addWindowEvent(this, "resize", "resized");
-				u.e.addWindowEvent(this, "scroll", "scrolled");
+				u.e.addWindowEvent(this, "resize", this.resized);
+				u.e.addWindowEvent(this, "scroll", this.scrolled);
+				this.initHeader();
 				this.resized();
+			}
+		}
+		page.initHeader = function() {
+			var logo = u.ie(this.hN, "a", {"class":"logo", "href":"/","html": 'KBHFF <span class="highlight">' + document.title + '</span>'});
+			u.ce(logo, {"type":"link"});
+			var frontpage_link = u.qs("li.front a", this.nN);
+			if(frontpage_link) {
+				frontpage_link.parentNode.remove();
 			}
 		}
 		page.ready();
 	}
 }
 u.e.addDOMReadyEvent(u.init);
-
-
-/*i-front.js*/
-Util.Objects["front"] = new function() {
-	this.init = function(scene) {
-		scene.resized = function() {
-		}
-		scene.scrolled = function() {
-		}
-		scene.ready = function() {
-		}
-		scene.ready();
-	}
-}
-
-
-/*i-template.js*/
-Util.Objects["template"] = new function() {
-	this.init = function(scene) {
-		scene.resized = function() {
-		}
-		scene.scrolled = function() {
-		}
-		scene.ready = function() {
-			var form = u.qs("form", this);
-			u.f.init(form);
-		}
-		scene.ready();
-	}
-}
 
 
 /*i-scene.js*/
