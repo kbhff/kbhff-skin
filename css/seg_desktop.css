@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2018-11-27 17:23:21
+asset-builder @ 2018-11-28 12:20:21
 */
 
 /*seg_desktop_include.css*/
@@ -15,9 +15,7 @@ asset-builder @ 2018-11-27 17:23:21
 	line-height: 24px;
 	color: #000000;
 }
-body > .highlight {
-	color: #3e8e17;
-}
+#page span.highlight {color: #3e8e17;}
 #page {}
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt {padding: 0; margin: 0;}
 h1, h2, h3, h4, h5, h6, p, li, dd, dt, span, a {line-height: 1em; font-weight: 400;}
