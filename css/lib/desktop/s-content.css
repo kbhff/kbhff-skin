@@ -77,7 +77,6 @@
 	text-decoration: none;
 	color: #3e8e17;
 	font-weight: bold;
-	/* Hvordan markere besøgte links? */
 }
 
 
@@ -138,6 +137,10 @@
 	padding-top: 12px;
 }
 
+#content dl {
+	padding-bottom: 12px;
+}
+
 #content dt {
 	font-size: 14px;
 	line-height: 24px;
@@ -146,10 +149,6 @@
 }
 
 #content dd {
-	padding-bottom: 12px;
-}
-
-#content dl {
 	padding-bottom: 12px;
 }
 
