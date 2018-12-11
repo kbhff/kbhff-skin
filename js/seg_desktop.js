@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2018-12-10 12:49:43
+asset-builder @ 2018-12-11 18:06:06
 */
 
 /*seg_desktop_include.js*/
@@ -4664,6 +4664,7 @@ Util.Objects["page"] = new function() {
 				u.e.addWindowEvent(this, "resize", this.resized);
 				u.e.addWindowEvent(this, "scroll", this.scrolled);
 				this.initHeader();
+				this.initNavigation();
 				this.resized();
 			}
 		}
@@ -4673,6 +4674,32 @@ Util.Objects["page"] = new function() {
 			var frontpage_link = u.qs("li.front a", this.nN);
 			if(frontpage_link) {
 				frontpage_link.parentNode.remove();
+			}
+		}
+		page.initNavigation = function() {
+			page.nN_nodes = u.qsa("li.nav-node-primary", page.nN);
+			for (var i = 0; i < page.nN_nodes.length; i++) {
+				var nav_node = page.nN_nodes[i];
+				nav_node.subnav = u.qs("ul", nav_node);
+				if (nav_node.subnav) {
+					u.e.hover(nav_node, {
+						"delay":"200"
+					});
+					nav_node.over = function(event) {
+						u.ass(this.subnav, {
+							"transition":"all 0.2s ease-out",
+							"visibility":"visible",
+							"opacity":"1"
+						})
+					}
+					nav_node.out = function(event) {
+						u.ass(this.subnav, {
+							"transition":"all 0.3s ease-out",
+							"visibility":"hidden",
+							"opacity":"0"
+						})
+					}
+				}
 			}
 		}
 		page.ready();

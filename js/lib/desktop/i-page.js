@@ -73,6 +73,9 @@ Util.Objects["page"] = new function() {
 				// Initialize header
 				this.initHeader();
 
+				// Initialize navigation
+				this.initNavigation();
+
 				// Initial size adjustment
 				this.resized();
 			}
@@ -89,6 +92,38 @@ Util.Objects["page"] = new function() {
 				frontpage_link.parentNode.remove();
 			}
 
+		}
+
+		// initialize navigation
+		page.initNavigation = function() {
+
+			page.nN_nodes = u.qsa("li.nav-node-primary", page.nN);
+			
+			for (var i = 0; i < page.nN_nodes.length; i++) {
+				var nav_node = page.nN_nodes[i];
+				nav_node.subnav = u.qs("ul", nav_node);
+								
+				if (nav_node.subnav) {
+					u.e.hover(nav_node, {
+						"delay":"200"
+					});
+					nav_node.over = function(event) {
+						u.ass(this.subnav, {
+							"transition":"all 0.2s ease-out",
+							"visibility":"visible",
+							"opacity":"1"
+						})
+					}
+					
+					nav_node.out = function(event) {
+						u.ass(this.subnav, {
+							"transition":"all 0.3s ease-out",
+							"visibility":"hidden",
+							"opacity":"0"
+						})
+					}
+				}
+			}
 		}
 
 		// ready to start page builing process
