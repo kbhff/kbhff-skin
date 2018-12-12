@@ -13,18 +13,23 @@
 #navigation ul.navigation ul {
 	position: absolute;
 	z-index: 100;
-	visibility: hidden;
 	opacity: 0;
+	display: none;
+	background-color: #fff;
+	left: -9px;
+	white-space: nowrap;	
+	
 }
 
 #navigation ul.navigation li {
 	display: inline-block;
 	margin-right: 5px;
+	position: relative;
 }
 
 #navigation ul.navigation ul li {
 	display: block;
-	margin-top: 8px;
+	margin: 6px 9px;
 }
 
 #navigation ul.navigation a {
