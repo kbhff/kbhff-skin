@@ -428,6 +428,13 @@ body > div.overlay .close:after {
 
 /* Articles */
 
+
+#content .scene div.article h1 {margin-bottom: 10px;}
+#content .scene div.article ul.tags {display: none;}
+#content .article > div.articlebody {width: 600px; margin: 0 auto;}
+#content .article > ul.info {width: 600px; margin: 0 auto; padding-left: 0; margin-left: 12px;}
+#content .article > ul.info li {padding-left: 0}
+
 #content .scene ul.info {position: relative; z-index: 1; padding-bottom: 26px; padding-right: 0; display: inline-block; vertical-align: top; width: auto; font-size: 0;}
 #content .scene ul.info li {width: auto; font-size: 12px; line-height: 12px; color: #bbbbbb; display: inline-block; vertical-align: top;}
 #content .scene ul.info > li.author:before,
