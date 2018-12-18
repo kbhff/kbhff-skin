@@ -93,7 +93,7 @@ div.field.correct .indicator {
 }
 
 /* DEFAULT STATE */
-div.field select.default {
+div.field .default, {
 	color: #999999;
 }
 
