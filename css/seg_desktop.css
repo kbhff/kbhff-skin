@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2018-12-18 14:13:34
+asset-builder @ 2018-12-18 14:17:38
 */
 
 /*seg_desktop_include.css*/
@@ -148,7 +148,8 @@ div.field.correct .indicator {
 	background-position: center -2px;
 	background-size: 14px 14px;
 }
-div.field .default, {
+div.field select.default,
+div.field input.default {
 	color: #999999;
 }
 div.field div.help {position: relative;}
