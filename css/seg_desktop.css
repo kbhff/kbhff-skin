@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2018-12-18 14:17:38
+asset-builder @ 2018-12-18 16:02:55
 */
 
 /*seg_desktop_include.css*/
@@ -163,13 +163,8 @@ div.field.error div.error {opacity: 1;
 	transform: translate(0, 0);
 }
 div.field div.hint {color: #999999;}
-div.field.focus div.hint,
-div.field.hover div.hint {opacity: 1;
-	transform: translate(0, 0);
-}
-div.field.error div.hint {opacity: 0;
-	transform: translate(0, -10px);
-}
+div.field.focus div.hint {opacity: 1; transform: translate(0, 0);}
+div.field.error div.hint {opacity: 0; transform: translate(0, -10px);}
 ul.actions,
 #content ul.actions {list-style: none; margin: 0 0 0 2px; font-size: 0;}
 ul.actions li,
@@ -261,14 +256,14 @@ input[type="submit"] {
 
 /*s-navigation.css*/
 #navigation {
-    position: relative;
-    width: 936px;
-    margin: 0 auto;
+	position: relative;
+	width: 936px;
+	margin: 0 auto;
 }
 #navigation ul.navigation,
-#navigation ul.navigation ul, {
+#navigation ul.navigation ul {
 	font-size: 0;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 #navigation ul.navigation ul {
 	position: absolute;
