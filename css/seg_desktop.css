@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2018-12-19 16:13:28
+asset-builder @ 2018-12-19 17:19:27
 */
 
 /*seg_desktop_include.css*/
@@ -219,7 +219,7 @@ input[type="submit"] {
 	position: relative;
 	width: 936px;
 	margin: 0 auto;
-	padding: 28px 0 10px;
+	padding: 18px 0 18px;
 }
 #header .logo {
 	box-sizing: border-box;
@@ -627,6 +627,8 @@ body > div.overlay .close:before {
 body > div.overlay .close:after {
 	transform: rotate(-45deg);
 }
+#content div.messages p.error {color: #C22414;}
+#content .banner > img {padding-top: 5px;}
 
 
 /*s-footer.css*/

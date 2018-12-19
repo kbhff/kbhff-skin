@@ -428,3 +428,7 @@ body > div.overlay .close:after {
 	transform: rotate(-45deg);
 }
 
+/* MISC */
+#content div.messages p.error {color: #C22414;}
+
+#content .banner > img {padding-top: 5px;}
