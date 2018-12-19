@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2018-12-19 15:20:41
+asset-builder @ 2018-12-19 16:13:28
 */
 
 /*seg_desktop_include.css*/
@@ -264,7 +264,6 @@ input[type="submit"] {
 #navigation ul.navigation,
 #navigation ul.navigation ul {
 	font-size: 0;
-	padding-bottom: 10px;
 }
 #navigation ul.navigation ul {
 	position: absolute;
