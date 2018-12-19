@@ -3,12 +3,9 @@
 
 #content .scene div.article h1 {margin-bottom: 10px;}
 #content .scene div.article ul.tags {display: none;}
-#content .scene .article > div.articlebody {width: 600px; margin: 0 auto;}
+#content .scene > .article > div.articlebody {width: 600px; margin: 0 auto;}
 #content .scene .article > ul.info {width: 100%; margin: 0 auto; padding-left: 12px; padding-right: 12px; box-sizing: border-box;}
 #content .scene .article > ul.info li {padding-left: 0}
-
-/* Should be full with in grid */
-#content .scene .c-wrapper .article > div.articlebody {width: 100%;}
 
 /* */
 #content .scene ul.info {position: relative; z-index: 1; padding-bottom: 26px; padding-right: 0; display: inline-block; vertical-align: top; width: auto; font-size: 0;}
