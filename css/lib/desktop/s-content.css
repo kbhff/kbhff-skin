@@ -430,6 +430,7 @@ body > div.overlay .close:after {
 }
 
 /* MISC */
-#content div.messages p.error {color: #C22414;}
+#content div.messages p.error,
+#content p.errormessage {color: #C22414;}
 
 #content .banner > img {padding-top: 5px;}
