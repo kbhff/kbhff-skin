@@ -256,14 +256,14 @@
 	margin-bottom: 24px;
 }
 
-#content div.c-box > :first-child,
-#content div.c-primary-box > :first-child {
-	padding-top: 12px;
+#content .c-box > h2,
+#content .c-primary-box > h2 {
+	padding-top: 22px;
 }
 
-#content div.c-box > :last-child,
-#content div.c-primary-box > :last-child {
-	padding-bottom: 12px;
+#content div.c-box > p:first-child,
+#content div.c-primary-box > p:first-child {
+	padding-top: 12px;
 }
 
 #content div.c-box {
@@ -342,10 +342,6 @@
 #content div.c-three-quarters > div.c-primary-box.c-one-half {
 	width: calc(66.6666% - 24px);
 }
-
-/* content in box */
-#content .c-box > h2,
-#content .c-primary-box > h2 {padding-top: 22px;}
 
 
 /**
