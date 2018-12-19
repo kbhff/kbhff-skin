@@ -64,7 +64,8 @@
 }
 
 #content h1 + p,
-#content h1 + h3 {
+#content h1 + h3,
+#content h1 + .c-wrapper {
 	padding-top: 46px;
 }
 
@@ -341,6 +342,10 @@
 #content div.c-three-quarters > div.c-primary-box.c-one-half {
 	width: calc(66.6666% - 24px);
 }
+
+/* content in box */
+#content .c-box > h2,
+#content .c-primary-box > h2 {padding-top: 22px;}
 
 
 /**
