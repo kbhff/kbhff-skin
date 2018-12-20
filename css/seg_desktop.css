@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2018-12-20 15:53:35
+asset-builder @ 2018-12-20 16:27:46
 */
 
 /*seg_desktop_include.css*/
@@ -46,13 +46,17 @@ sup {line-height: 1em; font-family: inherit; color: inherit;}
 
 /*s-article.css*/
 #content .scene .article ul.info {display: none;}
+#content .scene .article .articlebody > p:first-child,
+#content .scene .article .articlebody > h3:first-child,
+#content .scene .article .articlebody > .c-wrapper:first-child, {padding-top: 46px;}
+#content .scene .article .articlebody > ul.info + p:first-child,
+#content .scene .article .articlebody > ul.info + h3:first-child,
+#content .scene .article .articlebody > ul.info + .c-wrapper:first-child {padding-top: 46px;}
 #content .scene .article h1 {}
 #content .scene .article ul.tags {display: none;}
 #content .scene .article > ul.info {width: 100%; margin: 0 auto; padding-top: 10px; padding-left: 12px; padding-right: 12px; box-sizing: border-box;}
 #content .scene .article > ul.info li {padding-left: 0}
 #content .scene > .article > .articlebody {width: 600px; margin: 0 auto;} 
-#content .scene .article .articlebody > p:first-child,
-#content .scene .article .articlebody > h3:first-child {padding-top: 46px;}
 #content .scene ul.info {position: relative; z-index: 1; padding-right: 0; padding-bottom: 0; display: inline-block; vertical-align: top; width: auto; font-size: 0; line-height: 1em;}
 #content .scene ul.info li {width: auto; font-size: 12px; line-height: 12px; display: inline-block; vertical-align: top;}
 #content .scene ul.info > li.author:before,
