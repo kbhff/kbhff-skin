@@ -120,6 +120,10 @@
 	padding-left: 8px;
 }
 
+#content ul.info {
+	display: none;
+}
+
 #content ul.richtext {
 	list-style: none;
 	margin-left: 0;
