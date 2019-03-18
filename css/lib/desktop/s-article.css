@@ -1,4 +1,4 @@
-/* Articles */
+/* ARTICLES */
 #content .scene .article .articlebody > p:first-child,
 #content .scene .article .articlebody > h3:first-child,
 #content .scene .article .articlebody > .c-wrapper:first-child {padding-top: 46px;}
@@ -13,7 +13,7 @@
 #content .scene .article ul.tags {display: none;}
 
 
-/* INFO TODO: SCOPE AND GENERALIZE */
+/* INFO */
 #content .scene ul.info {display: none;}
 
 #content .scene ul.info {position: relative; z-index: 1; padding-right: 0; padding-bottom: 0; vertical-align: top; width: auto; font-size: 0; line-height: 1em;}
