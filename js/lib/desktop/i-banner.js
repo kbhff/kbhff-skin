@@ -4,7 +4,7 @@ Util.Objects["banner"] = new function() {
 			var variant = u.cv(div, "variant");
 			var format = u.cv(div, "format");
 
-			if (variant == "random") {
+			if (variant == "random" || !variant) {
 				variant = u.random(1, 4);
 			}
 
