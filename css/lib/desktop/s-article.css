@@ -1,7 +1,7 @@
 /* ARTICLES */
-#content .scene .article .articlebody > p:first-child {padding-top: 36px;}
+#content .scene .article .articlebody > p:first-child,
 #content .scene .article .articlebody > h3:first-child,
-#content .scene .article .articlebody > .c-wrapper:first-child {padding-top: 46px;}
+#content .scene .article .articlebody > .c-wrapper:first-child {padding-top: 36px;}
 
 
 #content .scene .article h1 {}
