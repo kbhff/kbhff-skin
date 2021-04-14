@@ -1,5 +1,5 @@
 /*
-asset-builder @ 2021-04-14 12:02:33
+asset-builder @ 2021-04-14 18:46:43
 */
 
 /*seg_desktop_include.js*/
@@ -5228,7 +5228,7 @@ Util.Modules["page"] = new function() {
 			}
 		}
 		page.ready = function() {
-			u.bug("page.ready 2:", this);
+			u.bug("page.ready", this);
 			if(!this.is_ready) {
 				this.is_ready = true;
 				this.cN.scene = u.qs(".scene", this);
@@ -5283,7 +5283,6 @@ Util.Modules["page"] = new function() {
 			}
 		}
 		page.acceptCookies = function() {
-			u.bug("acceptCookies", u.terms_version);
 			if(u.terms_version && !u.getCookie(u.terms_version)) {
 				var terms = u.ie(document.body, "div", {"class":"terms_notification"});
 				u.ae(terms, "h3", {"html":u.stringOr(u.txt["terms-headline"], "Flere grøntsager, <br />færre kager")});

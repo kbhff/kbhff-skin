@@ -55,7 +55,7 @@ Util.Modules["page"] = new function() {
 
 		// Page is ready
 		page.ready = function() {
-			u.bug("page.ready 2:", this);
+			u.bug("page.ready", this);
 
 			// page is ready to be shown - only initalize if not already shown
 			if(!this.is_ready) {
@@ -151,7 +151,7 @@ Util.Modules["page"] = new function() {
 
 		// show accept cookies dialogue
 		page.acceptCookies = function() {
-			u.bug("acceptCookies", u.terms_version);
+			// u.bug("acceptCookies", u.terms_version);
 
 			// show terms notification
 			if(u.terms_version && !u.getCookie(u.terms_version)) {
